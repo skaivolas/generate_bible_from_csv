@@ -1,0 +1,18 @@
+plugins_dir:
+  - jekyll-datapage-generator
+
+page_gen:
+  - data: 'bibleverses'
+    template: 'pitem'
+    dir: 'v'
+    name: 'id'
+    title: 'title'
+  - data: 'member'
+    template: 'profile'
+    name: 'name'
+    dir: 'people'
+  - data: 'bibleverses'
+    template: 'pitem-add'
+    dir: 'v'
+    name: 'title'
+    title: 'title'
