@@ -1,0 +1,12 @@
+<html><body>{% assign this = site.data.pitems | where:"id", page.id | first %}<h1>{{ this.title }}</h1>{% assign current_lines = site.data.byword | where:"WLCverse", page.id %}
+<p>{% for item in current_lines  %}{{ item.BHS | strip }}{{ item.separ }}{% endfor %}</p>
+<p>{% for item in current_lines  %} {{ item.gloss }} {% endfor %}</p>
+<p>{% for item in current_lines  %} {{ item.morphology }} {% endfor %}</p>
+<p>{% for item in current_lines  %} {{ item.trans1 }} {% endfor %}</p>
+<p>{% for item in current_lines  %} {{ item.stresses }} {% endfor %}</p>
+<p>{% for item in current_lines  %} {{ item.trans2 }} {% endfor %}</p>
+<p>{% for item in current_lines  %} {{ item.lexemeID }} {% endfor %}</p>
+<p>{% for item in current_lines  %} {{ item.extendedStrongNumber }} {% endfor %}</p>
+<p>{% for item in current_lines  %} {{ item.BSB }} {% endfor %}</p>
+<p>{% for item in current_lines  %} {{ item.BSBsort }} {% endfor %}</p>
+</body></html>
